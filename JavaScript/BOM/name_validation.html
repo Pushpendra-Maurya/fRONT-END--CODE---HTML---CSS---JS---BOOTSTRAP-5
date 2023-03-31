@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom WIth REGX </title>
+</head>
+<body>
+
+    <h1>This is DOM PROJETC WITH RWEGX</h1>
+
+
+    <script>
+
+        var nameRegX = /^[a-zA-Z\ ]+$/
+        var name  = prompt("Enter Your Name : ")
+
+        if (name == "" || name == " "){
+            alert ("Name Can't Be Blank !")
+
+        }
+
+        else if(name.length <=2){
+            alert("Your Name Length is less than 2 ! ")
+        }
+
+        else if(name.length >=20){
+            alert("Your Name Lenght is so High PlZ Check Your Name Lenght! ")
+        }
+
+        else if (!nameRegX.test(name)){
+            alert("Your Name Type Is not matches !")
+        }
+
+        else{
+            alert("Hello " +name)
+        }
+
+        
+    </script>
+    
+</body>
+</html>

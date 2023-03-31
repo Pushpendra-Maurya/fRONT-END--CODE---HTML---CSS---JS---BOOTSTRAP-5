@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Tutorial</title>
+</head>
+<body>
+
+    <!-- Javascript selector  -->
+    <h1>This is JavaScript Selector </h1>
+
+    <button id="button">clicked</button>
+
+    <p id="para"></p>
+
+
+    <button onclick="clickhead()">click button</button>
+    <h1 id="head">this is getelementid</h1>
+
+     
+      <!-- get element by id  using change any specific text to override -->
+      <!-- <script>
+        function clickhead(){
+            var h = document.getElementById('head');
+            h.innerHTML = "This is selector"
+        }
+
+
+      </script> -->
+
+
+    <!-- get element by id  with click event -->
+    <!-- <script>
+        var button = document.getElementById('button')
+        var p = document.getElementById('para');
+        button.addEventListener('click',clickbutn);
+        function clickbutn(){
+            console.log("test")
+            p.innerHTML = 'button clicked......'
+        }
+
+    </script> -->
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- define variable  -->
+    <!-- <script>
+        // using var variable name 
+        // reused code 
+        var a = 10;
+        console.log(a)
+        a = a +100
+        console.log(a)
+
+        // print string 
+        var a  = "javascript"
+        console.log(a);
+
+
+        // using let variable 
+        let b = 100;
+        console.log(b)
+
+        b = b+100;
+        console.log(b);
+
+        // const use to make varibale 
+        const c = 100;
+        console.log(c)
+    </script> -->
+    
+    <!-- Primitive  Data types  -->
+
+    <!-- boolean data types  -->
+    <!-- <script>
+        var a = true
+        var b = false
+
+        console.log(b, typeof(b))
+        console.log(a, typeof(a))
+        // undefined because print blank variable
+        var e 
+        console.log(e, typeof(e))
+
+        var w  = null 
+        console.log(w, typeof(w))
+    </script> -->
+
+
+    <!-- array  -->
+   
+
+
+
+    <!-- not primitive data  -->
+    <!-- <script>
+        // not primitive data types example
+        
+        // empty arr 
+        var arr = []
+        console.log(arr, typeof(arr))
+
+        // class method
+        var arr = new Array();
+        console.log(arr, typeof(arr))
+
+        // example-2
+        var arr1 = new Array()
+        console.log(arr1, typeof(arr1))
+
+        var arr2 = new Array(1,2,34,5,6)
+        console.log(arr2, typeof(a2))
+
+
+        // unshift method :- used to add element to starting position
+
+        arr2.unshift(55)
+        console.log(arr2)
+
+
+        // push method aa eleemtnin ending position in array 
+        arr2.push(65)
+        console.log(arr2)
+
+        arr2.splice(1,2,0);
+        console.log(arr2)
+
+        // how to access element in array 
+        console.log(arr2[5])
+
+        // how to modified element in array 
+        arr2[2] = 1000
+        console.log(arr2)
+
+
+
+
+
+    </script> -->
+    
+    <!-- delete element in array  -->
+    <!-- <script>
+
+        // delete element in araay 
+        var arr = new Array()
+        console.log(arr, typeof(arr))
+
+        var arr1 = new Array(1,2,3,4,5,6,7,8,9);
+        console.log(arr1, typeof(arr1))
+        
+        // shift method - method used to delete all the data in array 
+
+        arr.shift()
+        console.log(arr)
+
+        
+        var arr1 = new Array(1,2,3,4,5,6,7,8,9);
+        console.log(arr1, typeof(arr1))
+        
+        // pop method -is used to delete all element
+        arr.pop()
+        console.log(arr)
+
+        
+        var arr1 = new Array(1,2,3,4,5,6,7,8,9);
+        console.log(arr1, typeof(arr1))
+        
+        // delete - to specific elemet 
+        delete arr1[5] 
+        console.log(arr1)
+
+        // length - is used to find length of element 
+        console.log(arr1.length)
+
+
+    </script> -->
+
+    <!-- create object in js  -->
+    <!-- <script>
+        // define object in js 
+        var obj = {};
+        console.log(obj)
+
+        // define by property name 
+
+        obj ['fname'] = 'Rahul'
+        console.log(obj)
+
+
+        // define dot property 
+        obj.lname = "maurya";
+        console.log(obj)
+
+
+        // by using built in method take 2 argument 
+        // 1 - target and 
+        // 2 - source basically create new var store there then call call there
+
+        var newobj = Object.assign(obj,{'age':25})
+        console.log(newobj)
+
+
+
+    </script> -->
+
+     <!-- create variable in js   -->
+    <!-- <script>
+
+        // variable 
+        // var keyword
+        var a = 10;
+        console.log(a)
+        a = a +100;
+        console.log(a)
+
+        var a = "javascript"
+        console.log(a)
+
+        // let keyword - dont define same variable if use let adn const
+        // but resued crud operation
+         let b = 100;
+         console.log(b)
+
+         b = b+100
+         console.log(b)
+
+        //  const - only one time define cant reused 
+
+        const c = 100;
+        console.log(c)
+
+        c = c+ 100
+
+
+
+
+    </script> -->
+
+
+    <!-- function  -->
+    <!-- function make using there function keyword  -->
+    <!-- <script>
+        function test(name){
+            document.write("hello  " + name);
+
+
+        }
+        test("pushpendra")
+
+        function name(){
+            document.write("hello ");
+
+        }
+        name()
+    </script> -->
+
+    <!-- DOM  is measn loop  --> 
+    <!-- DOCUMENT OBJECT MODEL -->
+    <!-- for loop  -->
+    <!-- <script>
+        
+        // 1- for loop :- 
+        // :- used very carrfully any syntz missed then going in infintie loop then pc will hanged
+
+        // example - 1
+        // for(var i = 1; i<=10; i++){
+        //     document.write(i + "<br>")
+        // }
+
+        // example -2  - reverse 
+        var a = 10
+        for (var i = 10; i >=1; i--){
+            document.write(`${i}<br>`)
+        }
+
+        // example - 3
+        var n = 2
+        for(i = 10; i >=1; i--){
+            document.write( `${n} X ${n} = ${n*i}<br>`)
+        }
+
+        // example - 4 make table 
+
+        var n = 2
+        for (var i = 1; i <=10; i++){
+            document.write(`${n} x ${n} = ${n*i}<br>`)
+        }
+
+
+
+
+
+    </script> -->
+    
+    <!-- while loop  -->
+    <!-- <script>
+
+        var i = 1
+        while (i <= 10){
+            document.write(i + `<br>`)
+        }
+
+    </script> -->
+ 
+     <!-- do while loop  -->
+     <!-- <script>
+        var i = 1;
+        do{
+            document.write(i + `<br>`)
+            i++;
+
+        }
+        while(i <=10)
+     </script> -->
+
+     <!-- for in loop in js  -->
+     <!-- example  - 1 -->
+     <!-- <script>
+        var arr = ["pushpendra","suraj","gaurab","ritesh"]
+        for (i in arr){
+            document.write(i + `<br>`)
+            console.log(i)
+        }
+
+
+        // example - 2 
+        var person = {
+            fname:"pushpendra",
+            lname:"Maurya",
+            age:25,
+            address:"mumbai"
+        }
+        for (j in person){
+            document.write(person[j] + `<br>`)
+        }
+     </script> -->
+
+    
+    <!-- .......................................  -->
+    
+     <!-- regular expression in js as regX -->
+
+
+    <!-- BOM -->
+    <!-- BROWSER OBJECT MODEL  -->
+    <!-- as conditional statement as well as regular expression 
+     -->
+     <!-- <script>
+        var regX = /^[A-Za-z]+$/;
+        var name = "pushpendra"
+        console.log(regX.test(name));
+
+
+    </script> -->
+
+    <!-- validation part  -->
+    <!-- <script>
+        // contact validation
+        var contactReX = /^[6-9]+[0-9]+&/
+        var contact = prompt("Enter Your Contact :")
+
+        if(contact =="" || contact ==" "){
+            alert("Your contact should not blank")
+        }
+        else if(! contactReX.test(contact)){
+            alert("Invalid Contact")
+        }
+        else{
+            alert ("Your Contact is :" + contact)
+
+        }
+        document.write("Your contact is", contact)
+    </script> -->
+
+    <!-- name validation  -->
+
+    <!-- <script>
+
+        var nameRegX = /^[a-zA-Z\ ]+$/
+        var name = prompt("Enter Your name :")
+
+        if(name == " " || name == ""){
+            alert("name Can't be blank ")
+        }
+        else if(name.length <=2){
+            alert("Your name Length is less than 2")
+        }
+        else if(name.length >=20){
+            alert("Your Name length is so high")
+        }
+        else if(!nameRegX.test(name)){
+            alert("your Name Type is  not matches")
+        }
+        else{
+            alert("hellp" + name)
+            document.write("hello"+name)
+        }
+
+    </script> -->
+
+
+</body>
+</html>

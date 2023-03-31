@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <select name="dropdown" id="dropdown" >
+
+
+            <option value="Python">Python</option>
+            <option value="java">java</option>
+            <option value="html">HTML</option>
+            <option value="css">css</option>
+            <option value="sql">SQL</option>
+            
+            
+
+        </select>
+
+        <div>
+            <p id="msg">
+
+            </p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var drop = document.getElementById("dropdown");
+        var msg = document.getElementById("msg");
+
+        drop.addEventListener("change", dropfunc);
+
+        function dropfunc(){
+            var value1 = drop.value ;
+            msg.innerHTML = `You Have Selected th option ${value1}`;
+            msg.style.color = "red"
+
+        }
+
+    </script>
+</body>
+</html>
